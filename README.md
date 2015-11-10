@@ -1,29 +1,23 @@
 # GAnalytics
-Step1:
-Download python 2.7:
-https://www.python.org/downloads/
+This is an app for querying Google Analytics data. 
 
-Step2:
-Install Google Analytics API for Python in terminal:
-pip install --upgrade google-api-python-client
+##Prerequisite
+  - Python 2.7
+    https://www.python.org/downloads/
+  - Google Analytics API for Python
+    `pip install --upgrade google-api-python-client`
 
-Step3:
-Get into working directory in terminal:
-cd ~/...
+##Usage
+  1. Go to working directory in terminal
+    `cd ~/...`
+  2. Create configuration file (default: setup.txt)
+    `python create_config.py <config_file_name>`
+  3. Query data
+    `python GAnalytics.py --setup <config_file_name>`
 
-Step4:
-Create configuration file (default: setup.txt)
-python create_config.py <config_file_name>
+##Reference
+  - Dimensions & Metrics Explorer:
+    https://developers.google.com/analytics/devguides/reporting/core/dimsmets
 
-Step5:
-Query data:
-python GAnalytics.py --setup <config_file_name>
-
-
-
-
-Dimensions & Metrics Explorer:
-https://developers.google.com/analytics/devguides/reporting/core/dimsmets
-
-Google Analytics API.data.ga Documentation:
-https://developers.google.com/resources/api-libraries/documentation/analytics/v3/python/latest/analytics_v3.data.ga.html
+  - Google Analytics API.data.ga Documentation:
+    https://developers.google.com/resources/api-libraries/documentation/analytics/v3/python/latest/analytics_v3.data.ga.html
